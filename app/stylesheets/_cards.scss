@@ -1,0 +1,20 @@
+main {
+  text-align: center;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 1rem;
+    }
+  }
+  button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-style: none;
+    box-shadow: 5px 5px $color-someshadeofBrown;
+  }
+  button:hover{
+    background: $color-kindaGreen;
+    border-style: none;
+  }
+}

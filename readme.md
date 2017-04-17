@@ -15,15 +15,15 @@ A Survey Taking Application
 ### Plan it and Check it
 
 Components
-- [ ] Start Page
+- [X] Start Page
 - [ ] Question Page
 - [ ] Results Page
 
 Start Page
-- [ ] Text that welcomes user
-- [ ] Tell them how many questions
+- [X] Text that welcomes user
+- [X] Tell them how many questions
 - [ ] Link to each question
-- [ ] Start Button
+- [X] Start Button
   - [ ] Takes user to Question 1
 
 
@@ -32,6 +32,7 @@ Question Page
 - [ ] Input field for answer
 - [ ] Next Question Button
 - [ ] Previous Question Button
+- [ ] Since we're using question/1, etc, should each one have an ID?
 
 Result Page
 - [ ] Shows all questions and answers in tabular format
@@ -46,3 +47,5 @@ Routes Required to use
 - [ ] /results
 - [ ]
 - [ ]
+
+app_root.js has a NavBar const
