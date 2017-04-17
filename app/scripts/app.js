@@ -14,7 +14,7 @@ export default function app() {
     <Provider store={store}>
       <Router>
         <div>
-          <Route path="/"                component={AppRoot} />
+          <Route exact path="/"                component={AppRoot} />
           <Route path="/start"           component={Start} />
           <Route path="/question/1"      component={Questions} />
           <Route path="/question/2"      component={Questions} />

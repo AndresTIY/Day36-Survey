@@ -15,11 +15,10 @@ class Questions extends React.Component {
 
   render(){
     return (
-      <Router>
         <div>
-          <Route path="/question/1"      component={Question1} />
+          {Question1}
+          <h1>fsdfsdf</h1>
         </div>
-      </Router>
     )
   }
 }
@@ -36,3 +35,6 @@ export default Questions
 // const question8
 // const question9
 // const question10
+// <Router>
+// <Route path="/question/1"      component={Question1} />
+// </Router>

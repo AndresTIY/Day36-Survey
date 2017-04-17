@@ -1,6 +1,9 @@
 import React from 'react'
+import { Link, Redirect } from 'react-router-dom'
+
 
 class Start extends React.Component {
+
   render () {
     return (
       <main>
@@ -18,7 +21,7 @@ class Start extends React.Component {
           <li>Question 9 Link</li>
           <li>Question 10 Link</li>
         </ul>
-        <button>Start</button>
+        <Link to="/question/1">Start!</Link>
       </main>
     );
   }
