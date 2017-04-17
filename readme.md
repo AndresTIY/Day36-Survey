@@ -16,15 +16,15 @@ A Survey Taking Application
 
 Components
 - [X] Start Page
-- [ ] Question Page
+- [X] Question Page
 - [ ] Results Page
 
 Start Page
 - [X] Text that welcomes user
 - [X] Tell them how many questions
-- [ ] Link to each question
+- [X] Link to each question
 - [X] Start Button
-  - [ ] Takes user to Question 1
+  - [X] Takes user to Question 1
 
 
 Question Page
@@ -32,18 +32,18 @@ Question Page
 - [ ] Input field for answer
 - [ ] Next Question Button
 - [ ] Previous Question Button
-- [ ] Since we're using question/1, etc, should each one have an ID?
+
 
 Result Page
 - [ ] Shows all questions and answers in tabular format
 - [ ] If question isn't answered, use CSS to highlight it
 
 Routes Required to use
-- [ ] /
-- [ ] /start/
-- [ ] /question/1
-- [ ] /question/2
-- [ ] #...
+- [X] /
+- [X] /start/
+- [X] /question/1
+- [X] /question/2
+- [X] #...
 - [ ] /results
 - [ ]
 - [ ]

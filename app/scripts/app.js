@@ -14,18 +14,9 @@ export default function app() {
     <Provider store={store}>
       <Router>
         <div>
-          <Route exact path="/"                component={AppRoot} />
+          <Route exact path="/"          component={AppRoot} />
           <Route path="/start"           component={Start} />
-          <Route path="/question/1"      component={Questions} />
-          <Route path="/question/2"      component={Questions} />
-          <Route path="/question/3"      component={Questions} />
-          <Route path="/question/4"      component={Questions} />
-          <Route path="/question/5"      component={Questions} />
-          <Route path="/question/6"      component={Questions} />
-          <Route path="/question/7"      component={Questions} />
-          <Route path="/question/8"      component={Questions} />
-          <Route path="/question/9"      component={Questions} />
-          <Route path="/question/10"     component={Questions} />
+          <Route path="/question"        component={Questions} />
           <Route path="/results"         component={Results} />
         </div>
       </Router>
@@ -33,3 +24,17 @@ export default function app() {
     document.getElementById('app')
   )
 }
+
+
+
+
+// <Route path="/question/2"      component={Questions} />
+// <Route path="/question/3"      component={Questions} />
+// <Route path="/question/4"      component={Questions} />
+// <Route path="/question/5"      component={Questions} />
+// <Route path="/question/6"      component={Questions} />
+// <Route path="/question/7"      component={Questions} />
+// <Route path="/question/8"      component={Questions} />
+// <Route path="/question/9"      component={Questions} />
+// <Route path="/question/10"     component={Questions} />
+// </div>
