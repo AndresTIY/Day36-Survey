@@ -68,14 +68,15 @@ const Question9 = () => (<div>
                   <Link to="/question/8">Previous Question</Link>
                   <Link to="/question/10">Next Question</Link>
                   </div>)
-const Question10 = () => (<div>
-                  <p>What is your Social Security Number? You can trust me</p>
-                  <input placeholder="type in your answer" type="text"></input>
-                  <button>Submit Answer</button>
-                  <Link to="/question/9">Previous Question</Link>
-                  </div>)
+// const Question10 = () => (<div>
+//                   <p>What is your Social Security Number? You can trust me</p>
+//                   <input placeholder="type in your answer" type="text"></input>
+//                   <button>Submit Answer</button>
+//                   <Link to="/question/9">Previous Question</Link>
+//                   </div>)
 
-const btn = () => (<button>Submit</button>)
+
+
 
 
 class Questions extends React.Component {
@@ -85,10 +86,12 @@ class Questions extends React.Component {
   }
 
   buttonClick(){
-    console.log('button clicked');
+    console.log(input.value)
   }
 
+
   render(){
+
     return (
           <Router>
             <div className="questions">
@@ -111,6 +114,25 @@ class Questions extends React.Component {
 
 
 export default Questions
+
+class Question10 extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log(this.refs.answer.value)
+  }
+  render(){
+    return (<div>
+              <p>What is your Social Security Number? You can trust me</p>
+              <input ref="answer" placeholder="type in your answer" type="text"></input>
+              <button onClick={this.buttonClick}>Submit Answer</button>
+              <Link to="/question/9">Previous Question</Link>
+            </div>)
+  }
+}
 
 // <Link to="/question/1">Question 1 Link</Link>
 // <Link to="/question/2">Question 2 Link</Link>
