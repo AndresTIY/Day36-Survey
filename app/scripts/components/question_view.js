@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import { render } from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
-
+import store from '../store.js'
+import container from '../containers/all.js'
+import { connect } from 'react-redux'
 
 
 class Questions extends React.Component {
@@ -38,6 +40,8 @@ class Question1 extends React.Component {
 
   buttonClick(){
     console.log(this.refs.answer.value)
+    store.dispatch({type:"SAVE_ANSWER", answer: this.refs.answer.value})
+
   }
   render(){
     return (<div>
@@ -57,6 +61,7 @@ class Question2 extends React.Component {
 
   buttonClick(){
     console.log(this.refs.answer.value)
+    store.dispatch({type:"SAVE_ANSWER", answer: this.refs.answer.value})
   }
   render(){
     return (<div>
@@ -76,6 +81,7 @@ class Question3 extends React.Component {
 
   buttonClick(){
     console.log(this.refs.answer.value)
+    store.dispatch({type:"SAVE_ANSWER", answer: this.refs.answer.value})
   }
   render(){
     return (<div>
@@ -97,6 +103,7 @@ class Question4 extends React.Component {
 
   buttonClick(){
     console.log(this.refs.answer.value)
+    store.dispatch({type:"SAVE_ANSWER", answer: this.refs.answer.value})
   }
   render(){
     return (<div>
@@ -116,6 +123,7 @@ class Question5 extends React.Component {
 
   buttonClick(){
     console.log(this.refs.answer.value)
+    store.dispatch({type:"SAVE_ANSWER", answer: this.refs.answer.value})
   }
   render(){
     return (<div>
@@ -135,6 +143,7 @@ class Question6 extends React.Component {
 
   buttonClick(){
     console.log(this.refs.answer.value)
+    store.dispatch({type:"SAVE_ANSWER", answer: this.refs.answer.value})
   }
   render(){
     return (<div>
@@ -154,6 +163,7 @@ class Question7 extends React.Component {
 
   buttonClick(){
     console.log(this.refs.answer.value)
+    store.dispatch({type:"SAVE_ANSWER", answer: this.refs.answer.value})
   }
   render(){
     return (<div>
@@ -173,6 +183,7 @@ class Question8 extends React.Component {
 
   buttonClick(){
     console.log(this.refs.answer.value)
+    store.dispatch({type:"SAVE_ANSWER", answer: this.refs.answer.value})
   }
   render(){
     return (<div>
@@ -192,6 +203,7 @@ class Question9 extends React.Component {
 
   buttonClick(){
     console.log(this.refs.answer.value)
+    store.dispatch({type:"SAVE_ANSWER", answer: this.refs.answer.value})
   }
   render(){
     return (<div>
@@ -211,6 +223,7 @@ class Question10 extends React.Component {
 
   buttonClick(){
     console.log(this.refs.answer.value)
+    store.dispatch({type:"SAVE_ANSWER", answer: this.refs.answer.value})
   }
   render(){
     return (<div>

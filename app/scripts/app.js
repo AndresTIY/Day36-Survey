@@ -24,17 +24,3 @@ export default function app() {
     document.getElementById('app')
   )
 }
-
-
-
-
-// <Route path="/question/2"      component={Questions} />
-// <Route path="/question/3"      component={Questions} />
-// <Route path="/question/4"      component={Questions} />
-// <Route path="/question/5"      component={Questions} />
-// <Route path="/question/6"      component={Questions} />
-// <Route path="/question/7"      component={Questions} />
-// <Route path="/question/8"      component={Questions} />
-// <Route path="/question/9"      component={Questions} />
-// <Route path="/question/10"     component={Questions} />
-// </div>
