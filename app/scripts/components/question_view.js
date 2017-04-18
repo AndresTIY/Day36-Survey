@@ -6,92 +6,8 @@ import { Provider } from 'react-redux'
 
 
 
-const Question1 = () => (<div>
-                  <p>How old are you?</p>
-                  <input placeholder="type in your answer" type="text"></input>
-                  <button>Submit Answer</button>
-                  <Link to="/question/2">Next Question</Link>
-                  </div>)
-const Question2 = () => (<div>
-                  <p>What are you doing tonight?</p>
-                  <input placeholder="type in your answer" type="text"></input>
-                  <button>Submit Answer</button>
-                  <Link to="/question/1">Previous Question</Link>
-                  <Link to="/question/3">Next Question</Link>
-                  </div>)
-const Question3 = () => (<div>
-                  <p>How many cups of water have you had today?</p>
-                  <input placeholder="type in your answer" type="text"></input>
-                  <button>Submit Answer</button>
-                  <Link to="/question/2">Previous Question</Link>
-                  <Link to="/question/4">Next Question</Link>
-                  </div>)
-const Question4 = () => (<div>
-                  <p>How many cats do you currently own??</p>
-                  <input placeholder="type in your answer" type="text"></input>
-                  <button>Submit Answer</button>
-                  <Link to="/question/3">Previous Question</Link>
-                  <Link to="/question/5">Next Question</Link>
-                  </div>)
-const Question5 = () => (<div>
-                  <p>Who is your Overwatch Main?</p>
-                  <input placeholder="type in your answer" type="text"></input>
-                  <button>Submit Answer</button>
-                  <Link to="/question/4">Previous Question</Link>
-                  <Link to="/question/6">Next Question</Link>
-                  </div>)
-const Question6 = () => (<div>
-                  <p>In how many language can you do the FizzBuzz {`function`} in?</p>
-                  <input placeholder="type in your answer" type="text"></input>
-                  <button>Submit Answer</button>
-                  <Link to="/question/5">Previous Question</Link>
-                  <Link to="/question/7">Next Question</Link>
-                  </div>)
-const Question7 = () => (<div>
-                  <p>If money and health was not an issue, what kind of Taco Bell item would you order?</p>
-                  <input placeholder="type in your answer" type="text"></input>
-                  <button>Submit Answer</button>
-                  <Link to="/question/6">Previous Question</Link>
-                  <Link to="/question/8">Next Question</Link>
-                  </div>)
-const Question8 = () => (<div>
-                  <p>Why is Google Fiber available in the majority of the 78704 area but not mine?</p>
-                  <input placeholder="type in your answer" type="text"></input>
-                  <button>Submit Answer</button>
-                  <Link to="/question/7">Previous Question</Link>
-                  <Link to="/question/9">Next Question</Link>
-                  </div>)
-const Question9 = () => (<div>
-                  <p>How much cheese is too much?</p>
-                  <input placeholder="type in your answer" type="text"></input>
-                  <button>Submit Answer</button>
-                  <Link to="/question/8">Previous Question</Link>
-                  <Link to="/question/10">Next Question</Link>
-                  </div>)
-// const Question10 = () => (<div>
-//                   <p>What is your Social Security Number? You can trust me</p>
-//                   <input placeholder="type in your answer" type="text"></input>
-//                   <button>Submit Answer</button>
-//                   <Link to="/question/9">Previous Question</Link>
-//                   </div>)
-
-
-
-
-
 class Questions extends React.Component {
-  constructor(props){
-    super(props)
-    this.buttonClick = this.buttonClick.bind(this)
-  }
-
-  buttonClick(){
-    console.log(input.value)
-  }
-
-
   render(){
-
     return (
           <Router>
             <div className="questions">
@@ -107,7 +23,6 @@ class Questions extends React.Component {
               <Route path ="/question/10" component={Question10}  />
             </div>
           </Router>
-
     )
   }
 }
@@ -115,6 +30,179 @@ class Questions extends React.Component {
 
 export default Questions
 
+class Question1 extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log(this.refs.answer.value)
+  }
+  render(){
+    return (<div>
+             <p>How old are you?</p>
+             <input ref="answer" placeholder="type in your answer" type="text"></input>
+             <button onClick={this.buttonClick}>Submit Answer</button>
+             <Link to="/question/2">Next Question</Link>
+            </div>)
+  }
+}
+
+class Question2 extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log(this.refs.answer.value)
+  }
+  render(){
+    return (<div>
+              <p>What are you doing tonight?</p>
+              <input ref="answer" placeholder="type in your answer" type="text"></input>
+              <button onClick={this.buttonClick}>Submit Answer</button>
+              <Link to="/question/1">Previous Question</Link>
+              <Link to="/question/3">Next Question</Link>
+            </div>)
+  }
+}
+class Question3 extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log(this.refs.answer.value)
+  }
+  render(){
+    return (<div>
+              <p>How many cups of water have you had today?</p>
+              <input ref="answer" placeholder="type in your answer" type="text"></input>
+              <button onClick={this.buttonClick}>Submit Answer</button>
+              <Link to="/question/2">Previous Question</Link>
+              <Link to="/question/4">Next Question</Link>
+            </div>)
+
+
+  }
+}
+class Question4 extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log(this.refs.answer.value)
+  }
+  render(){
+    return (<div>
+              <p>How many cats do you currently own??</p>
+              <input ref="answer" placeholder="type in your answer" type="text"></input>
+              <button onClick={this.buttonClick}>Submit Answer</button>
+              <Link to="/question/3">Previous Question</Link>
+              <Link to="/question/5">Next Question</Link>
+            </div>)
+  }
+}
+class Question5 extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log(this.refs.answer.value)
+  }
+  render(){
+    return (<div>
+              <p>Who is your Overwatch Main?</p>
+              <input ref="answer" placeholder="type in your answer" type="text"></input>
+              <button onClick={this.buttonClick}>Submit Answer</button>
+              <Link to="/question/4">Previous Question</Link>
+              <Link to="/question/6">Next Question</Link>
+            </div>)
+  }
+}
+class Question6 extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log(this.refs.answer.value)
+  }
+  render(){
+    return (<div>
+              <p>In how many language can you do the FizzBuzz {`function`} in?</p>
+              <input ref="answer" placeholder="type in your answer" type="text"></input>
+              <button onClick={this.buttonClick}>Submit Answer</button>
+              <Link to="/question/5">Previous Question</Link>
+              <Link to="/question/7">Next Question</Link>
+            </div>)
+  }
+}
+class Question7 extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log(this.refs.answer.value)
+  }
+  render(){
+    return (<div>
+              <p>If money and health was not an issue, what kind of Taco Bell item would you order?</p>
+              <input ref="answer" placeholder="type in your answer" type="text"></input>
+              <button onClick={this.buttonClick}>Submit Answer</button>
+              <Link to="/question/6">Previous Question</Link>
+              <Link to="/question/8">Next Question</Link>
+            </div>)
+  }
+}
+class Question8 extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log(this.refs.answer.value)
+  }
+  render(){
+    return (<div>
+              <p>Why is Google Fiber available in the majority of the 78704 area but not mine?</p>
+              <input ref="answer" placeholder="type in your answer" type="text"></input>
+              <button onClick={this.buttonClick}>Submit Answer</button>
+              <Link to="/question/7">Previous Question</Link>
+              <Link to="/question/9">Next Question</Link>
+            </div>)
+  }
+}
+class Question9 extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log(this.refs.answer.value)
+  }
+  render(){
+    return (<div>
+              <p>How much cheese is too much?</p>
+              <input ref="answer" placeholder="type in your answer" type="text"></input>
+              <button onClick={this.buttonClick}>Submit Answer</button>
+              <Link to="/question/8">Previous Question</Link>
+              <Link to="/question/10">Next Question</Link>
+            </div>)
+  }
+}
 class Question10 extends React.Component {
   constructor(props){
     super(props)
@@ -133,40 +221,3 @@ class Question10 extends React.Component {
             </div>)
   }
 }
-
-// <Link to="/question/1">Question 1 Link</Link>
-// <Link to="/question/2">Question 2 Link</Link>
-// <Link to="/question/3">Question 3 Link</Link>
-// <Link to="/question/4">Question 4 Link</Link>
-// <Link to="/question/5">Question 5 Link</Link>
-// <Link to="/question/6">Question 6 Link</Link>
-// <Link to="/question/7">Question 7 Link</Link>
-// <Link to="/question/8">Question 8 Link</Link>
-// <Link to="/question/9">Question 9 Link</Link>
-// <Link to="/question/10">Question 10 Link</Link>
-// <Router>
-// <Route path="/question/1"      component={Question1} />
-// </Router>
-// <button>Next Question</button>
-// <button>Previous Question</button>
-
-
-// buttonClick: function(){
-//   store.dispatch(categories(this.refs.name.value))
-// },
-// render: function(){
-//   return (
-//   <div className="start-card">
-//     <input
-//     ref="name"
-//     placeholder="what is your name?"
-//     type="text">
-//     </input>
-//     <button
-//     onClick={this.buttonClick}>Click to Submit Your Name
-//     </button>
-//   </div>)
-// }
-//
-// })
-// export default StartView
