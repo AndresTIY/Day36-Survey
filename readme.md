@@ -28,10 +28,11 @@ Start Page
 
 
 Question Page
-- [ ] Question being asked
-- [ ] Input field for answer
-- [ ] Next Question Button
-- [ ] Previous Question Button
+- [X] Question being asked
+- [X] Input field for answer
+  - [ ] Capture Data from Input with Button
+- [X] Next Question Button
+- [X] Previous Question Button
 
 
 Result Page
@@ -45,7 +46,6 @@ Routes Required to use
 - [X] /question/2
 - [X] #...
 - [ ] /results
-- [ ]
-- [ ]
+
 
 app_root.js has a NavBar const

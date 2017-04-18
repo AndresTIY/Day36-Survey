@@ -75,7 +75,18 @@ const Question10 = () => (<div>
                   <Link to="/question/9">Previous Question</Link>
                   </div>)
 
+const btn = () => (<button>Submit</button>)
+
+
 class Questions extends React.Component {
+  constructor(props){
+    super(props)
+    this.buttonClick = this.buttonClick.bind(this)
+  }
+
+  buttonClick(){
+    console.log('button clicked');
+  }
 
   render(){
     return (
@@ -90,7 +101,7 @@ class Questions extends React.Component {
               <Route path ="/question/7" component={Question7} />
               <Route path ="/question/8" component={Question8} />
               <Route path ="/question/9" component={Question9} />
-              <Route path ="/question/10" component={Question10} />
+              <Route path ="/question/10" component={Question10}  />
             </div>
           </Router>
 
@@ -116,3 +127,24 @@ export default Questions
 // </Router>
 // <button>Next Question</button>
 // <button>Previous Question</button>
+
+
+// buttonClick: function(){
+//   store.dispatch(categories(this.refs.name.value))
+// },
+// render: function(){
+//   return (
+//   <div className="start-card">
+//     <input
+//     ref="name"
+//     placeholder="what is your name?"
+//     type="text">
+//     </input>
+//     <button
+//     onClick={this.buttonClick}>Click to Submit Your Name
+//     </button>
+//   </div>)
+// }
+//
+// })
+// export default StartView
