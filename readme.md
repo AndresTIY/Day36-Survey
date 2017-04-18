@@ -30,7 +30,7 @@ Start Page
 Question Page
 - [X] Question being asked
 - [X] Input field for answer
-  - [ ] Capture Data from Input with Button
+  - [X] Capture Data from Input with Button
 - [X] Next Question Button
 - [X] Previous Question Button
 
@@ -48,4 +48,6 @@ Routes Required to use
 - [ ] /results
 
 
-app_root.js has a NavBar const
+### Challenges
+- Trying to make a button event take the user to the next link was a challenge. I couldn't figure it out but instead, created a `Link to` instead of a button which worked
+- Had a difficult time trying to create an onClick event. I originally had all the questions outside of the `class Questions extends React.Component` set as a `const`. So within the `const`, I did `<button onClick = {this.buttonClick}>` in different variations but didn't far. I eventually just put each question in it's own class, and the button clicks worked. It's not very efficient or DRY but it worked.
